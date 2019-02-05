@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/Lalit/eclipse-workspace/Repositories/selenium-java-3/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="/Users/Lalit/eclipse-workspace/Repositories/selenium-java-3/libs/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="/Users/Lalit/eclipse-workspace/Repositories/selenium-java-3/libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/Lalit/eclipse-workspace/Repositories/selenium-java-3/libs/gson-2.8.0.jar"/>
+	<classpathentry kind="lib" path="/Users/Lalit/eclipse-workspace/Repositories/selenium-java-3/libs/httpclient-4.5.3.jar"/>
+	<classpathentry kind="lib" path="/Users/Lalit/eclipse-workspace/Repositories/selenium-java-3/libs/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="/Users/Lalit/eclipse-workspace/Repositories/selenium-java-3/libs/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/Lalit/eclipse-workspace/Repositories/selenium-java-3/libs/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/Lalit/eclipse-workspace/Repositories/okhttp-3.12.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Lalit/eclipse-workspace/Repositories/selenium-java-3/libs/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="/Users/Lalit/eclipse-workspace/Repositories/java-client-7.0.0.jar"/>
+	<classpathentry kind="lib" path="/Users/Lalit/eclipse-workspace/Repositories/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
