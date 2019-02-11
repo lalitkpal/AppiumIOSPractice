@@ -25,7 +25,7 @@ public class TestBase {
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
 		//Following capability required for ios version greater than 8
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
-		cap.setCapability(MobileCapabilityType.APP, "//users//Lalit//Desktop//UICatalog.app");
+		cap.setCapability(MobileCapabilityType.APP, "/users/Lalit/Desktop/UICatalog.app");
 	
 		
 		IOSDriver<IOSElement> driver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
