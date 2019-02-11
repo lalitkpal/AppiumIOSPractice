@@ -18,7 +18,9 @@ import io.appium.java_client.remote.MobileCapabilityType;
  */
 public class TestBase {
 	
-	public static void main(String args[]) throws MalformedURLException {
+	static IOSDriver<IOSElement> driver;
+	
+	public static IOSDriver<IOSElement> Setup() throws MalformedURLException{
 		
 		File appDir = new File("src");
 		File app = new File(appDir, "UICatalog.app");
@@ -30,11 +32,12 @@ public class TestBase {
 		//Following capability required for ios version greater than 8
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
 		cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+		System.out.println(app.getAbsolutePath());
 	
 		
-		IOSDriver<IOSElement> driver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
+		driver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 		
-		
+		return driver;
 	}
 	
 }
