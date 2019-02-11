@@ -28,7 +28,7 @@ public class TestBase {
 		cap.setCapability(MobileCapabilityType.APP, "//users//Lalit//Desktop//UICatalog.app");
 	
 		
-		IOSDriver<IOSElement> driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"),cap);
+		IOSDriver<IOSElement> driver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 		
 		
 	}
