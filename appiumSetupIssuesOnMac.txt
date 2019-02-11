@@ -1,0 +1,31 @@
+Appium.app is installed
+xcode is installed
+UICatalog app is compiled
+Can launch iphone 6 simulator from xcode
+
+Issue 1: Error in recognizing IOSElement and IOSDriver class
+Solution: Import only appium client library[java-client-7.0.0.jar] and Selenium client libraries[client-combined-3.141.59.jar] and associated libraries from lib folder
+
+Issue 2: Unable to launch iOS simulator
+Solution: Need to mention correct device name e.g. "iphone 6" can use command xcrun simctl list on shell to get list of supported devices.
+Also need to add platform version in desired capabilities e.g. cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12.1");
+
+Issue 3: Unable to access app path
+Solution: for absolute path use path with single forward slash instead on double forward slash. e.g. instead of "//Users//xyz//Desktop//UICatalog.app" use "/Users/xyz/Desktop/UICatalog.app"
+
+Issue 4: Original error: Unable to launch WebDriverAgent because of xcodebuild failure: "Carthage binary is not found. Install using `brew install carthage` if it is not installed
+if brew is not present following steps
+step 1: check for xcode use command gcc --version
+step 2: if xcode is not present get it form App store
+step 3: if xcode is present then install Homebrew using below command
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+step 4: use command "brew doctor" to check any potential issue with brew
+step5: use command "brew update" to update it.
+Once brew is setup run above mentioned command 'brew install carthage'
+
+Issue 5: scrun simctl: unable to find simctl
+Solution: After installing and updating Homebrew, it updated xcode command line tools as well. 
+Need to setup it in xcode->preferences->Locations->Command line tools
+
+Issue 6: App can launch successfully but test terminated with Exception in thread "main" java.lang.NoClassDefFoundError: org/apache/commons/lang3/StringUtils
+Solution: add 
