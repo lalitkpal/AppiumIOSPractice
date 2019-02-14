@@ -9,7 +9,9 @@ public class FirstTest extends TestBase {
 		// TODO Auto-generated method stub
 		
 		IOSDriver<IOSElement> driver = Setup();
-
+		
+		driver.findElementByXPath("//XCUIElementTypeApplication[@name=\"UICatalog\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]").click();
+		
 	}
 
 }
